@@ -20,8 +20,12 @@ class Home extends CI_Controller {
     public function index()
     {
         $data['data']['random'] = $this->wechat->getWechat('random',8);
+        $data['header']['wechatCategory'] = $this->wechat->getWechatType();
+//        var_dump($data['data']['wechatCategory']);
         //var_dump($data['data']['random'][0]->wechatname);
         $data['template'] = 'template/home';
         $this->load->view('main',$data);
     }
+
+
 }

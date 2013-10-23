@@ -434,5 +434,9 @@ $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
 
 
+//|--------------------------------------------------------------------------custom
+$config['ercodeUrl'] = 'static/ercode/';
+//
 /* End of file config.php */
 /* Location: ./application/config/config.php */
+

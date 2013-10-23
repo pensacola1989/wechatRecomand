@@ -4,13 +4,14 @@
     <div class="rand_module wc_module green">
         <div class="module_header green_header">
             <h3 class="green_font">随机推荐</h3>
-            <a class="more">更多...</a>
+            <a class="changeRand">换一批</a>
         </div>
         <ul class="module_body">
             <?php if($data['random'] != null) { ?>
                 <?php foreach($data['random'] as $row) { ?>
                 <div class="qr_item">
-                    <img src="../images/1.jpg">
+<!--                    <img src="../images/1.jpg">-->
+                    <img src="<?php echo base_url() . $this->config->item('ercodeUrl') .$row->wechatImgPath; ?>" alt=""/>
                     <div class="qr_control">
                         <span class="wc_name"><?=$row->wechatname?></span>
                         <span class="wc_good">1</span>

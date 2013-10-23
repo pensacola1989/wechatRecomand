@@ -66,4 +66,14 @@ class Wechat_model extends CI_Model {
     {
 
     }
+
+    /*
+     * get categories of wechat
+     */
+    public function getWechatType()
+    {
+        $query = $this->db->get('wechattype');
+
+        return $query->num_rows() > 0 ? $query->result() : null;
+    }
 }
